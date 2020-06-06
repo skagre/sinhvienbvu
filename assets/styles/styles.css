@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  color: #444445;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.column {
+  --columns: 12;
+  --width: 0;
+  -ms-flex-preferred-size: calc(var(--width) / var(--columns) * 100%);
+      flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+.wrapper .header {
+  max-width: 1170px;
+  height: 85px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .header .logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.wrapper .header .logo img {
+  height: 75px;
+}
+
+.wrapper .header .menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+}
+
+.wrapper .header .menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.wrapper .header .menu ul li {
+  display: inline-block;
+  padding: 0 12px;
+}
+
+.wrapper .header .menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wrapper .bg-image {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .bg-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.wrapper .bg-image .box {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 45%;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.wrapper .bg-image .box img {
+  width: 150px;
+}
+
+.wrapper .bg-image .box .heading-text {
+  margin-top: 25px;
+  color: #fff;
+  font-size: 36px;
+}
+
+.wrapper .bg-image .box .sub-text {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.wrapper .bg-image .box button {
+  margin-top: 30px;
+  padding: 16px 24px;
+  background-color: #47b340;
+  outline: none;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+.wrapper .heading-section {
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .news-list {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.wrapper .news-list .container .news {
+  --width: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.wrapper .news-list .container .news img {
+  margin-right: 10px;
+}
+
+.wrapper .news-list .container .news a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: unset;
+  text-align: unset;
+  margin-bottom: 5px;
+}
+
+.wrapper .majors {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+
+.wrapper .majors .container {
+  width: 1170px;
+}
+
+.wrapper .majors .container .major {
+  --width: 4;
+  margin-bottom: 230px;
+  position: relative;
+}
+
+.wrapper .majors .container .major .major-text {
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  width: 330px;
+  background-color: #fff;
+  padding: 25px 15px;
+}
+
+.wrapper .majors .container .major .major-text h2 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.wrapper .majors .container .major .major-text ul {
+  list-style: none;
+}
+
+.wrapper .majors .container .major .major-text ul li {
+  padding: 5px 0;
+}
+
+.wrapper .majors .container .major .major-text ul li i {
+  margin-right: 5px;
+}
+
+.wrapper .review {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.wrapper .review .container .r {
+  --width: 3;
+  padding: 70px 5px;
+}
+
+.wrapper .review .container .r i {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+}
+
+.wrapper .review .container .r p {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
